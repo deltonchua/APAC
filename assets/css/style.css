@@ -1,0 +1,584 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Utilities */
+.container {
+  width: 85%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #212529;
+  padding: 1.2rem 2.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btn-light {
+  background-color: #fff;
+  color: #212529;
+  font-weight: 900;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.menu-btn {
+  display: none;
+  padding: 0.6rem 0.8rem;
+  background-color: #212529;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Elements */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #212529;
+}
+
+a {
+  color: #212529;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.9;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Sections */
+/* HEADER */
+.main-header {
+  background: url('../images/hero.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+}
+
+.medicine .main-header {
+  background: url('../images/medicine.jpg') no-repeat center center/cover;
+}
+
+.education .main-header {
+  background: url('../images/education.jpg') no-repeat center center/cover;
+}
+
+.real-estate .main-header {
+  background: radial-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)),
+    url('../images/real-estate.jpg') no-repeat center center/cover;
+}
+
+.f-b .main-header {
+  background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),
+    url('../images/food.jpg') no-repeat center center/cover;
+}
+
+.cryptocurrency .main-header {
+  background: url('../images/cryptocurrencies.jpg') no-repeat center
+    center/cover;
+}
+
+.consultation .main-header {
+  background: radial-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)),
+    url('../images/cube.jpg') no-repeat center center/cover;
+}
+
+.contact .main-header {
+  background: radial-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)),
+    url('../images/phone.jpg') no-repeat center center/cover;
+}
+
+.main-nav,
+.main-nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav {
+  padding: 2rem 0;
+}
+
+.logo img,
+.footer-logo img {
+  height: 4rem;
+}
+
+.logo h1 {
+  font-size: 1.3rem;
+}
+
+.menu-btn {
+  display: block;
+}
+
+.main-nav ul {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 3.5rem;
+  background-color: #fff;
+  opacity: 0.9;
+}
+
+.main-nav ul li {
+  max-width: 100%;
+  margin-left: 0;
+  margin-bottom: 2.5rem;
+  text-transform: capitalize;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* .main-nav ul li {
+  max-width: 7rem;
+  margin-left: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: bold;
+} */
+
+.main-nav ul li a {
+  color: #888;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+  color: #212529;
+}
+
+.hero {
+  min-height: calc(100vh - 7.3rem);
+  max-width: 50rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.hero h3 {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hero h1 {
+  margin: 1.5rem 0 2rem;
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 1.2;
+}
+
+.f-b .hero h1,
+.cryptocurrency .hero h1 {
+  color: #fff;
+}
+
+.hero-arrow {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #888;
+  margin: 2rem 0;
+  line-height: 1;
+}
+
+.hero-arrow a {
+  color: #212529;
+}
+
+/* SEGMENT */
+.segment {
+  margin: 4rem 0;
+  padding: 5rem 0 6rem;
+  text-align: center;
+}
+
+.contact .segment {
+  text-align: left;
+}
+
+.contact .segment:last-child {
+  padding: 0 0 6rem;
+}
+
+.segment > h4 {
+  font-size: 0.95rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.contact .segment h4 {
+  font-size: 1.2rem;
+}
+
+.segment h3 {
+  font-size: 2.5rem;
+  margin: 1rem 0 2rem;
+}
+
+.segment p {
+  max-width: 80%;
+  margin: 0 auto 3rem;
+}
+
+.contact .segment p {
+  max-width: 100%;
+  margin: 0 0 2rem;
+}
+
+.contact .segment:last-child p {
+  margin: 1rem 0;
+}
+
+/* BUSINESSES */
+.business-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+  height: 40rem;
+}
+
+.card-img.medicine {
+  background: url('../images/doctor.jpg') no-repeat center center/cover;
+}
+
+.card-img.education {
+  background: url('../images/student.jpg') no-repeat center center/cover;
+}
+
+.card-img.real-estate {
+  background: url('../images/building.jpg') no-repeat center center/cover;
+}
+
+.card-img.f-b {
+  background: url('../images/cooking.jpg') no-repeat center center/cover;
+}
+
+.card-img.cryptocurrency {
+  background: url('../images/bitcoin.jpg') no-repeat center center/cover;
+}
+
+.card-img.consultation {
+  background: url('../images/office.jpg') no-repeat center center/cover;
+}
+
+.card-text {
+  padding: 1.5rem 1rem;
+}
+
+.card-text h4 {
+  font-size: 0.95rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* CONTACT US */
+.contact-us {
+  background: url('../images/hk-street.jpg') no-repeat center center/cover;
+}
+
+.contact-us .hero h2 {
+  width: 90%;
+  margin: 0 auto 2.5rem;
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 1.2;
+  color: #fff;
+}
+
+/* CONTACT PAGE */
+.contact .segment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+.contact .segment-grid:last-child {
+  margin-top: 3rem;
+}
+
+.contact .contact-details i {
+  margin-right: 1rem;
+  font-size: 0.9rem;
+}
+
+.contact .contact-details ul li {
+  margin-bottom: 1.3rem;
+}
+
+.contact .contact-details iframe {
+  margin-top: 1rem;
+  width: 100%;
+  height: calc(100% - 10rem);
+  height: 30rem;
+}
+
+/* Contact Form */
+.contact .contact-form {
+  padding-top: 2rem;
+}
+
+.contact .form-control {
+  margin-bottom: 2rem;
+}
+
+.contact .form-control:nth-child(5) {
+  margin-bottom: 1rem;
+}
+
+.contact .form-control label {
+  display: none;
+}
+
+.contact .form-control label[for='subject'],
+.contact .form-control label[for='message'] {
+  display: inline;
+  font-size: 0.8rem;
+  font-weight: bold;
+  position: relative;
+  top: 0.5rem;
+  left: 1.2rem;
+  padding: 0 0.5rem;
+  background-color: #fff;
+}
+
+.contact .form-control ::placeholder {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.contact .form-control input,
+.contact .form-control select,
+.contact .form-control textarea {
+  width: 100%;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+
+.contact .form-control input {
+  border: none;
+  border-bottom: 1px solid #888;
+}
+
+.contact .form-control select,
+.contact .form-control textarea {
+  border: 1px solid #888;
+}
+
+.contact .form-control input:focus {
+  border: none;
+  border-bottom: 2px solid #212529;
+  outline: none;
+}
+
+.contact .form-control select:focus,
+.contact .form-control textarea:focus {
+  border: 2px solid #212529;
+  outline: none;
+}
+
+.contact .form-control select {
+  background-color: #fff;
+}
+
+.contact form small {
+  display: block;
+  font-weight: bold;
+}
+
+.contact form input.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 2rem;
+}
+
+.contact form input.btn:hover {
+  color: #fff;
+}
+
+/* Global Partners Office */
+.office {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.office .flag {
+  margin-right: 2rem;
+}
+
+/* FOOTER */
+.main-footer {
+  background-color: #212529;
+  color: #fff;
+  padding: 5rem 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.footer-grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  font-weight: bold;
+}
+
+.main-footer a,
+.main-footer ul li {
+  color: #fff;
+  font-size: 0.95rem;
+  margin-top: 1.2rem;
+}
+
+.main-footer a:first-child {
+  margin-top: 0;
+}
+
+.main-footer .copyright {
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+.footer-grid-item h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .business-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact .segment {
+    margin: 0;
+  }
+
+  .contact .segment-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact .segment-grid:last-child {
+    gap: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .medicine .main-header {
+    background: url('../images/medicine.jpg') no-repeat left center/cover;
+  }
+
+  /* .menu-btn {
+    display: block;
+  }
+
+  .main-nav ul {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3.5rem;
+    background-color: #fff;
+    opacity: 0.9;
+  }
+
+  .main-nav ul li {
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 1rem;
+  } */
+}
+
+@media (max-width: 700px) {
+  .logo img {
+    height: 3.5rem;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .business-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-img {
+    height: 25rem;
+  }
+
+  .contact-us .hero h2 {
+    margin-bottom: 2.5rem;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1.2;
+    color: #fff;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-footer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+}
